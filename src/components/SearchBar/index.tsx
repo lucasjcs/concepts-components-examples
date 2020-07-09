@@ -23,7 +23,7 @@ const SearchBar: React.FC = () => {
     <Container>
       <InputGroup>
         <SearchBarInput
-          placeholder="Qual evento você procura?"
+          placeholder="Qual terapia você precisa?"
           autoCorrect={false}
           onChangeText={(text) => setInputText(text)}
           onSubmitEditing={searchSubmit}

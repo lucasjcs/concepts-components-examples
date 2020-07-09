@@ -1,4 +1,7 @@
 import styled from 'styled-components/native';
+import { Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
 
 export const Container = styled.View`
   flex: 1;
@@ -24,8 +27,18 @@ export const CategoryLink = styled.TouchableOpacity`
 export const CategoryImageContent = styled.View`
   height: 100px;
   width: 100px;
-  background: #555;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+
 `;
+export const CategoryImage = styled.Image`
+  height: 200px;
+  width: 100px;
+`;
+
 export const CategoryTitleText = styled.Text`
   font-size: 15px;
   color: #555;
@@ -44,11 +57,21 @@ export const HighlightHeaderText = styled.Text`
 export const HighlightItemContent = styled.View`
   margin-top: 20px;
 `;
+
+export const ImageHighlight = styled.Image`
+  height: 90%;
+  width: ${width - 100}px;
+`;
+
 export const HighlightLink = styled.TouchableOpacity``;
 export const HighlightImageContent = styled.View`
   height: 200px;
-  width: 400px;
-  background: #ccc;
+  border-width: 0.5px;
+  border-color: #ccc;
+  border-radius: 8px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
 `;
 export const HighlightTitleText = styled.Text`
   font-size: 16px;

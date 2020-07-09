@@ -14,6 +14,8 @@ export const SearchBarInput = styled.TextInput`
   padding: 20px;
   border-radius: 15px;
   color: ${colors.button};
+
+  background: white
 `;
 
 export const InputGroup = styled.View`

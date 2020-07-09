@@ -4,7 +4,7 @@ import { colors } from '../../assets/styles';
 
 export const Container = styled.View`
   flex: 1;
-  background: white;
+  background: #efefef;
   padding: 15px;
 `;
 
